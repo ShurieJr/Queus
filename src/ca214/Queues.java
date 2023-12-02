@@ -1,0 +1,24 @@
+package ca214;
+
+import java.util.LinkedList;
+import java.util.Queue;
+
+public class Queues {
+    public static void main(String[] args) {
+        Queue<Integer> numbers = new LinkedList<>();
+
+        numbers.add(10);
+        numbers.offer(20);
+        numbers.add(30);
+
+        System.out.println(numbers);
+        System.out.println("size : " + numbers.size());
+        System.out.println("isEmpty : " + numbers.isEmpty());
+        System.out.println("Front element : " + numbers.peek());
+        System.out.println("Front element : " + numbers.element());
+        System.out.println("poll element: " + numbers.poll());
+        System.out.println("removed element: " + numbers.remove());
+
+
+    }
+}
